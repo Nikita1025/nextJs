@@ -9,6 +9,7 @@ const Users = ({users}) => {
         <MainContainer title='Список пользователей'>
             <h1>Список пользователей</h1>
             <ul>
+
                 {users.map((el:any)=>
                     <li key={el.id}> <Href href={`/users/${el.id}`} text={el.name}/></li>
                 )}
